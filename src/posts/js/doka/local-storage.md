@@ -96,6 +96,16 @@ window.localStorage.setItem("name", "Doka Dog");
 widow.localStorage.key(0); // вернет "name"
 ```
 
+Таким образом, используя количество ключей в хранилище и получение ключа по индексу, можно организовать перебор всех значений в хранилище.
+
+```js
+const localStorageSize = window.localStorage.length;
+for (let = 0; i < localStorageSize; i++) {
+  console.log(window.localStorage.getItem(localStorage.key(i)))
+}
+
+```
+
 ### События
 
 При установке значения в хранилище срабатывает глобальное событие, с помощью которого можно отслеживать изменения в хранилище.
@@ -112,16 +122,6 @@ widow.localStorage.key(0); // вернет "name"
 window.addEventListener('storage', function (evt) {
   console.log(evt)
 })
-```
-
-Таким образом, используя количество ключей в хранилище и получение ключа по индексу, можно организовать перебор всех значений в хранилище.
-
-```js
-const localStorageSize = window.localStorage.length;
-for (let = 0; i < localStorageSize; i++) {
-  console.log(window.localStorage.getItem(localStorage.key(i)))
-}
-
 ```
 
 ## В работе

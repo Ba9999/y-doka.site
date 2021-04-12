@@ -154,7 +154,7 @@ window.addEventListener('storage', function (evt) {
 ```js
 const user = {
   name: "Doka Dog",
-  avatarUrl: "https://y-doka.site/assets/images/mainpage/mascot-doka.svg"
+  avatarUrl: "mascot-doka.svg"
 };
 
 localStorage.setItem("user", JSON.stringify(user))

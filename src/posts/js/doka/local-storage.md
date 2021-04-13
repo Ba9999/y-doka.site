@@ -145,7 +145,7 @@ function changePageFontSize(size) {
   document.style.fontSize = `${size}px`
 }
 
-window.addEventListener('storage', function (evt) {
+window.addEventListener("storage", function (evt) {
   if (evt.key === 'pageFontSize) {
     changePageFontSize(evt.newValue)
   }

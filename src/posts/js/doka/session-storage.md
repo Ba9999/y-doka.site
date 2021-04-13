@@ -139,7 +139,7 @@ function readUser() {
     return undefined
   }
 
-  // Если вдруг в хранилище оказался не валидный JSON предохраняемся от этого
+  // Если вдруг в хранилище оказался невалидный JSON, предохраняемся от этого
   try {
     return JSON.parse(userJSON)
   } catch (e) {

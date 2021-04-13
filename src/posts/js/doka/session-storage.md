@@ -100,7 +100,7 @@ widow.sessionStorage.key(0) // вернет "name"
 Таким образом, используя количество ключей в хранилище и получение ключа по индексу, можно организовать перебор всех значений в хранилище.
 
 ```js
-const sessionStorageSize = window.sessionStorage.length;
+const sessionStorageSize = window.sessionStorage.length
 for (let = 0; i < sessionStorageSize; i++) {
   console.log(window.sessionStorage.getItem(sessionStorage.key(i)))
 }

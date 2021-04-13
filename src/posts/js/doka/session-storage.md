@@ -25,7 +25,7 @@ summary:
 window.sessionStorage.setItem("name", "Doka Dog");
 ```
 
-При чтении ранее записанных данных по ключу `name` мы получим `Doka Dog`
+При чтении ранее записанных данных по ключу `name` мы получим `Doka Dog`.
 
 ```js
 const name = window.sessionStorage.getItem("name");

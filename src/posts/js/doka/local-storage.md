@@ -21,22 +21,22 @@ summary:
 Записываем данные:
 
 ```js
-window.localStorage.setItem("name", "Doka Dog");
+window.localStorage.setItem("name", "Doka Dog")
 ```
 
 При чтении ранее записанных данных по ключу `name` мы получим `Doka Dog`.
 
 ```js
-const name = window.localStorage.getItem("name");
-console.log(name);
+const name = window.localStorage.getItem("name")
+console.log(name)
 ```
 
 Повторная запись по тому же ключу приведет к замене данных:
 
 ```js
-window.localStorage.setItem("name", "Dog Doka");
-const name = window.localStorage.getItem("name");
-console.log(name);
+window.localStorage.setItem("name", "Dog Doka")
+const name = window.localStorage.getItem("name")
+console.log(name)
 ```
 
 ## Как это понять
@@ -50,7 +50,7 @@ console.log(name);
 Запись производит метод `setItem("ключ", "значение")`, который принимает два строковых параметра: ключ, по которому будет сохранено значение, и само значение.
 
 ```js
-window.localStorage.setItem("name", "Doka Dog");
+window.localStorage.setItem("name", "Doka Dog")
 ```
 
 ### Чтение
@@ -58,8 +58,8 @@ window.localStorage.setItem("name", "Doka Dog");
 За чтение отвечает `getItem("ключ")` c одним параметром, который указывает на ключ для чтения и возвращает полученное значение из хранилища, если до этого значение не было записано по этому ключу, то метод вернет `null`.
 
 ```js
-window.localStorage.getItem("name"); // вернет "Doka Dog"
-window.localStorage.getItem("user"); // вернет `null`
+window.localStorage.getItem("name") // вернет "Doka Dog"
+window.localStorage.getItem("user") // вернет `null`
 ```
 
 ### Удаление
@@ -67,8 +67,8 @@ window.localStorage.getItem("user"); // вернет `null`
 Удаляет запись из хранилища `removeItem("ключ")`. Так же успешно выполнится даже, если указанного ключа не существует в хранилище.
 
 ```js
-window.localStorage.removeItem("name");
-window.localStorage.removeItem("user");
+window.localStorage.removeItem("name")
+window.localStorage.removeItem("user")
 ```
 
 ### Очистка хранилища
@@ -76,7 +76,7 @@ window.localStorage.removeItem("user");
 Метод `clear()` очищает хранилище полностью
 
 ```js
-window.localStorage.clear();
+window.localStorage.clear()
 ```
 
 ### Количество полей в хранилище
@@ -92,14 +92,14 @@ window.localStorage.length
 Метод `key()` может получать ключ по индексу.
 
 ```js
-window.localStorage.setItem("name", "Doka Dog");
-widow.localStorage.key(0); // вернет "name"
+window.localStorage.setItem("name", "Doka Dog")
+widow.localStorage.key(0) // вернет "name"
 ```
 
 Таким образом, используя количество ключей в хранилище и получение ключа по индексу, можно организовать перебор всех значений в хранилище.
 
 ```js
-const localStorageSize = window.localStorage.length;
+const localStorageSize = window.localStorage.length
 for (let = 0; i < localStorageSize; i++) {
   console.log(window.localStorage.getItem(localStorage.key(i)))
 }
@@ -158,7 +158,7 @@ window.addEventListener('storage', function (evt) {
 const user = {
   name: "Doka Dog",
   avatarUrl: "mascot-doka.svg"
-};
+}
 
 localStorage.setItem("user", JSON.stringify(user))
 ```

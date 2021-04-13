@@ -120,7 +120,7 @@ for (let = 0; i < localStorageSize; i++) {
 - `url` - адрес страницы, на которой вызвано изменение.
 
 ```js
-window.addEventListener('storage', function (evt) {
+window.addEventListener("storage", function (evt) {
   console.log(evt)
 })
 ```

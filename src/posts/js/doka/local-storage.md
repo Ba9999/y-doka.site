@@ -142,12 +142,12 @@ window.addEventListener('storage', function (evt) {
 
 ```js
 function changePageFontSize(size) {
-  document.style.fontSize = `${size}px`;
+  document.style.fontSize = `${size}px`
 }
 
 window.addEventListener('storage', function (evt) {
   if (evt.key === 'pageFontSize) {
-    changePageFontSize(evt.newValue);
+    changePageFontSize(evt.newValue)
   }
 })
 ```

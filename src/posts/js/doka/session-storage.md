@@ -22,22 +22,22 @@ summary:
 Записываем данные:
 
 ```js
-window.sessionStorage.setItem("name", "Doka Dog");
+window.sessionStorage.setItem("name", "Doka Dog")
 ```
 
 При чтении ранее записанных данных по ключу `name` мы получим `Doka Dog`.
 
 ```js
-const name = window.sessionStorage.getItem("name");
-console.log(name);
+const name = window.sessionStorage.getItem("name")
+console.log(name)
 ```
 
 Повторная запись по тому же ключу приведет к замене данных:
 
 ```js
-window.sessionStorage.setItem("name", "Dog Doka");
-const name = window.sessionStorage.getItem("name");
-console.log(name);
+window.sessionStorage.setItem("name", "Dog Doka")
+const name = window.sessionStorage.getItem("name")
+console.log(name)
 ```
 
 ## Как это понять
@@ -51,7 +51,7 @@ console.log(name);
 Запись производит метод `setItem("ключ", "значение")`, который принимает два строковых параметра: ключ, по которому будет сохранено значение, и само значение.
 
 ```js
-window.sessionStorage.setItem("name", "Doka Dog");
+window.sessionStorage.setItem("name", "Doka Dog")
 ```
 
 ### Чтение
@@ -59,8 +59,8 @@ window.sessionStorage.setItem("name", "Doka Dog");
 За чтение отвечает `getItem("ключ")` c одним параметром, который указывает на ключ для чтения и возвращает полученное значение из хранилища, если до этого значение не было записано по этому ключу, то метод вернет `null`.
 
 ```js
-window.sessionStorage.getItem("name"); // вернет "Doka Dog"
-window.sessionStorage.getItem("user"); // вернет `null`
+window.sessionStorage.getItem("name") // вернет "Doka Dog"
+window.sessionStorage.getItem("user") // вернет `null`
 ```
 
 ### Удаление
@@ -68,8 +68,8 @@ window.sessionStorage.getItem("user"); // вернет `null`
 Удаляет запись из хранилища `removeItem("ключ")`. Так же успешно выполнится даже, если указанного ключа не существует в хранилище.
 
 ```js
-window.sessionStorage.removeItem("name");
-window.sessionStorage.removeItem("user");
+window.sessionStorage.removeItem("name")
+window.sessionStorage.removeItem("user")
 ```
 
 ### Очистка хранилища
@@ -77,7 +77,7 @@ window.sessionStorage.removeItem("user");
 Метод `clear()` очищает хранилище полностью
 
 ```js
-window.sessionStorage.clear();
+window.sessionStorage.clear()
 ```
 
 ### Количество полей в хранилище
@@ -93,8 +93,8 @@ window.sessionStorage.length
 Метод `key()` может получать ключ по индексу.
 
 ```js
-window.sessionStorage.setItem("name", "Doka Dog");
-widow.sessionStorage.key(0); // вернет "name"
+window.sessionStorage.setItem("name", "Doka Dog")
+widow.sessionStorage.key(0) // вернет "name"
 ```
 
 Таким образом, используя количество ключей в хранилище и получение ключа по индексу, можно организовать перебор всех значений в хранилище.

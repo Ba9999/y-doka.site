@@ -1,7 +1,7 @@
 ---
 title: "sessionStorage"
 name: session-storage
-author: Pavel Mineev
+author: akellbl4
 summary:
   - sessionstorage
   - webstorage
